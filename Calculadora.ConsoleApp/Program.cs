@@ -52,17 +52,17 @@ namespace Calculadora.ConsoleApp
                     case 1:
                         resposta = n1 + n2;
                         Console.Clear();
-                        Console.WriteLine($"{n1} + {n2} = {resposta} ");
+                        Console.WriteLine($"{n1} + {n2} = {resposta:F2} ");
                         goto sair; 
                     case 2:
                         resposta = n1 - n2;
                         Console.Clear();
-                        Console.WriteLine($"{n1} - {n2} = {resposta} ");
+                        Console.WriteLine($"{n1} - {n2} = {resposta:F2} ");
                         goto sair; 
                     case 3:
                         resposta = n1 * n2;
                         Console.Clear();
-                        Console.WriteLine($"{n1} * {n2} = {resposta} ");
+                        Console.WriteLine($"{n1} * {n2} = {resposta:F2} ");
                         goto sair; 
                     case 4:
                         if (n2 == 0)
@@ -72,7 +72,7 @@ namespace Calculadora.ConsoleApp
                         }
                         resposta = n1 / n2;
                         Console.Clear();
-                        Console.WriteLine($"{n1} / {n2} = {resposta} ");
+                        Console.WriteLine($"{n1} / {n2} = {resposta:F2} ");
                         goto sair;
                 }
                 sair:
